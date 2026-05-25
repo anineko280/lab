@@ -1,4 +1,4 @@
-## Macの設定
+# Macの設定
 
 - [始め方](#始め方)
   - [前提](#前提)
@@ -18,19 +18,27 @@
 ### 前提
 
 - Git
-- Xcode
 - Homebrew
 
 ### インストール
 
 1. リポジトリをclone
+
    ```sh
    git clone git@github.com:nasuneko7325/lab.git
    ```
+
 1. リポジトリのディレクトリに移動
+
    ```sh
    cd lab
    ```
+
+### GitHubの設定
+
+[Settings] - [Emails] - [Keep my email addresses private] を`On`にすること。
+自分のメールアドレスがコミットに記録されないようにするため。
+また、払い出されたメールアドレスは [mac_setting/dotfiles/gitconfig] の`email`に設定すること
 
 ## 使い方
 
@@ -42,7 +50,7 @@
 
 ### パッケージ関連
 
-#### インストール
+#### パッケージのインストール
 
 ```sh
 brew bundle
