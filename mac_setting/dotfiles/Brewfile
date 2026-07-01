@@ -2,6 +2,8 @@
 brew "awscli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Display directories as trees (with optional color/HTML output)
