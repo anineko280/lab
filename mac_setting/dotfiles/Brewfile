@@ -1,5 +1,7 @@
 # Official Amazon AWS command-line interface
 brew "awscli"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Polyglot runtime manager (asdf rust clone)
