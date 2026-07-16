@@ -12,6 +12,12 @@ brew "starship"
 brew "tree"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Agent orchestration platform
+cask "antigravity"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
+# AI Coding Agent IDE
+cask "antigravity-ide"
 # Application uninstaller
 cask "appcleaner"
 # App to build and share containerised applications and microservices
