@@ -5,7 +5,9 @@ export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
 
 # Starshipの設定
 eval "$(starship init zsh)"
+
+# miseの設定
 eval "$(mise activate zsh)"
 
-# Added by Antigravity IDE
+# パス追加
 export PATH="$HOME/.antigravity-ide/antigravity-ide/bin:$PATH"
