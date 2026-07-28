@@ -10,7 +10,7 @@
     - [パッケージの更新](#パッケージの更新)
     - [パッケージの追加](#パッケージの追加)
     - [パッケージの削除](#パッケージの削除)
-  - [VSCode関連](#vscode関連)
+  - [Antigravity IDE関連](#antigravity-ide関連)
   - [Mac関連](#mac関連)
 
 ## 始め方
@@ -76,11 +76,11 @@ brew uninstall hoge
 brew bundle dump -f
 ```
 
-### VSCode関連
+### Antigravity IDE関連
 
-- VSCodeのプロファイル機能を使う
-- `vscode/*.code-profile`からシチュエーションにあったプロファイルを使う
-  - インポート、エクスポート方法はVSCodeのバージョンによって異なるので適切な方法でやる
+- Antigravity IDEのプロファイル機能を使う
+- `agy-ide/*.code-profile`からシチュエーションにあったプロファイルを使う
+  - インポート、エクスポート方法はAntigravity IDEのバージョンによって異なるので適切な方法でやる
 
 ### Mac関連
 
