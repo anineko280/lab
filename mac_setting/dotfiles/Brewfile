@@ -1,49 +1,11 @@
-# Automatic configure script builder
-brew "autoconf"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
-# Official Amazon AWS command-line interface
-brew "awscli"
-# Parser generator
-brew "bison"
-# Software library to render fonts
-brew "freetype"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# Graphics library to dynamically manipulate images
-brew "gd"
-# GNU Privacy Guard (OpenPGP)
-brew "gnupg"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c@78"
-# Image manipulation library
-brew "jpeg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
-# BSD-style licensed readline alternative
-brew "libedit"
-# Conversion library
-brew "libiconv"
-# GNOME XML library
-brew "libxml2"
-# C library for reading, creating, and modifying zip archives
-brew "libzip"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
-# Generate C-based recognizers from regular expressions
-brew "re2c"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# General-purpose lossless data-compression library
-brew "zlib"
-# UNIX shell (command interpreter)
-brew "zsh"
 # Agent orchestration platform
 cask "antigravity"
 # Terminal interface for Antigravity agents
@@ -59,5 +21,3 @@ cask "font-sauce-code-pro-nerd-font"
 cask "google-chrome"
 # Team communication and collaboration software
 cask "slack"
-# Native GUI tool for relational databases
-cask "tableplus"

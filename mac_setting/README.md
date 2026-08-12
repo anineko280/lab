@@ -10,6 +10,7 @@
     - [パッケージの更新](#パッケージの更新)
     - [パッケージの追加](#パッケージの追加)
     - [パッケージの削除](#パッケージの削除)
+    - [特別対応](#特別対応)
   - [Antigravity IDE関連](#antigravity-ide関連)
   - [Mac関連](#mac関連)
 
@@ -75,6 +76,11 @@ brew bundle dump -f
 brew uninstall hoge
 brew bundle dump -f
 ```
+
+#### 特別対応
+
+- awscli
+  - Homebrewでインストールしようとすると大量の依存パッケージが入ってしまうため、公式インストーラーを使ってください
 
 ### Antigravity IDE関連
 
