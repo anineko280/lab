@@ -1,38 +1,42 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: バグ報告 (Bug report)
+about: 不具合やエラーの報告
+title: '[Bug] '
+labels: 'bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 📌 対象コンポーネント
+- [ ] `mac_setting/` (Mac環境構築・スクリプト・Brewfile等)
+- [ ] `learning/` (技術検証・学習用プロトタイプ)
+- [ ] その他 / リポジトリ全体
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+---
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## 📝 不具合の概要
+発生したバグや問題の内容を簡潔に記述してください。
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## 🔄 再現手順
+不具合を再現するための具体的な手順を記述してください：
+1. `...` を実行する
+2. `...` を選択 / 入力する
+3. エラーが発生する
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## 期待される挙動
+本来発生すべき正しい動作や期待していた結果を記述してください。
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+## 💥 エラーログ / スタックトレース
+```sh
+# エラーログやターミナルの出力をここに貼り付けてください
+```
 
-**Additional context**
-Add any other context about the problem here.
+## 🖼 スクリーンショット
+可能であれば、現象が分かるスクリーンショットやキャプチャ画像を添付してください。
+
+## 💻 実行環境情報
+- **OS**: macOS / その他 (バージョン: )
+- **関連ツール・バージョン**: (例: Node.js, Homebrew, Vite, Docker 等)
+
+## 💬 補足情報
+その他、問題に関する追加のコンテキストやメモがあれば記述してください。
