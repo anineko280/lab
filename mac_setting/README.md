@@ -26,7 +26,7 @@
 1. リポジトリをclone
 
    ```sh
-   git clone git@github.com:nasuneko7325/lab.git
+   git clone git@github.com:anineko280/lab.git
    ```
 
 1. リポジトリのディレクトリに移動

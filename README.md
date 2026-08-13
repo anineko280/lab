@@ -19,7 +19,7 @@
 ### 1. リポジトリの取得
 
 ```sh
-git clone git@github.com:nasuneko7325/lab.git
+git clone git@github.com:anineko280/lab.git
 cd lab
 ```
 
