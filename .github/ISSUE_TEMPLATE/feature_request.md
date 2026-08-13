@@ -1,20 +1,27 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: 機能要望・改善提案 (Feature request)
+about: 新機能の追加や既存機能・構成の改善提案
+title: '[Feature] '
+labels: 'enhancement'
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## 📌 対象コンポーネント
+- [ ] `mac_setting/` (Mac環境構築・スクリプト・Brewfile等)
+- [ ] `learning/` (技術検証・学習用プロトタイプ)
+- [ ] その他 / リポジトリ全体
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+---
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## 🎯 背景・解決したい課題
+なぜこの機能や改善が必要か、現状困っていることや解決したい課題を記述してください。
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## 🚀 提案内容・変更詳細
+具体的にどのような機能を追加、あるいはどのように変更したいかを記述してください。
+
+## 💡 検討した代替案・アイデア
+他に検討したアプローチや代替案があれば記述してください。
+
+## 💬 補足情報
+参考リンク、設計メモ、スクリーンショットなどがあれば記述してください。
