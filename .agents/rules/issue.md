@@ -12,8 +12,12 @@
 1. **タスクの整理**: 実装を開始する前に、Issue のタイトル、背景、具体的な対応作業（ToDoリスト）を整理します。
 2. **Issue の自動作成**: GitHub CLI (`gh issue create`) を実行して Issue を起票し、Issue 番号（`#N`）を取得します。
 
-### 2. 作業ブランチの作成（推奨）
-- Issue 番号を冠したブランチ（例: `issue-16/feat-description`）を作成して実装を進めます。
+### 2. 作業ブランチの作成
+- **ブランチ名の命名規則**: `<PRの種別>/<issue番号>-<変更内容>`
+  - 種別の例: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `chore`
+  - 例: `feat/16-add-user-login`
+  - 例: `docs/15-add-agent-rules`
+  - 例: `fix/18-resolve-build-error`
 
 ### 3. コミットおよび PR への紐付け
 - **コミットメッセージ**: メッセージに Issue 番号を含めます（例: `feat: #16 〇〇機能の追加`）。
