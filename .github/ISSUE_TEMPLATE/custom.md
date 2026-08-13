@@ -1,10 +1,17 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
+name: 質問・その他 (Question / General)
+about: 質問、検証アイデア、一般的なタスク・メモ
+title: '[Question/Task] '
+labels: 'question'
 assignees: ''
 
 ---
 
+## 📝 内容
+質問、検討事項、またはタスクの概要を記述してください。
 
+## 🔍 前提条件・調べたこと
+現在把握している情報や、事前に調べたこと・試したことがあれば記述してください。
+
+## 💬 補足情報・メモ
+参考URLや関連資料などがあれば記述してください。
