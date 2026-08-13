@@ -1,3 +1,5 @@
+# GitHub command-line tool
+brew "gh"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Polyglot runtime manager (asdf rust clone)
