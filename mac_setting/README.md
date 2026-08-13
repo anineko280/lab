@@ -81,6 +81,9 @@ brew bundle dump -f
 
 - awscli
   - Homebrewでインストールしようとすると大量の依存パッケージが入ってしまうため、公式インストーラーを使ってください
+- gh (GitHub CLI)
+  - ログイン認証: `gh auth login`（対話形式で `GitHub.com` / `HTTPS` or `SSH` / Webブラウザ認証を選択して承認）
+  - 状態確認: `gh auth status`
 
 ### Antigravity IDE関連
 
