@@ -8,7 +8,7 @@
 
 | ディレクトリ / ファイル | 説明 |
 | :--- | :--- |
-| [**`mac_setting/`**](mac_setting/) | Macの初期セットアップスクリプト (`setup.sh`)、Homebrew (`Brewfile`)、dotfiles (`zshrc`, `gitconfig` 等)、IDEプロファイルなどの管理 |
+| [**`setting/`**](setting/) | Macの初期セットアップスクリプト (`setup.sh`)、Homebrew (`Brewfile`)、dotfiles (`zshrc`, `gitconfig` 等)、IDEプロファイルなどの管理 |
 | [**`learning/`**](learning/) | 新技術の検証・学習用プロトタイプ（Vite, Docker Compose 等のハンズオン） |
 | *(今後追加予定)* | プロフィールサイトのソースコード管理 |
 
@@ -25,14 +25,14 @@ cd lab
 
 ### 2. Macの環境構築
 
-Macの新環境セットアップやパッケージ管理を行う場合は `mac_setting/` ディレクトリを参照してください。
+Macの新環境セットアップやパッケージ管理を行う場合は `setting/` ディレクトリを参照してください。
 
 ```sh
-cd mac_setting
+cd setting
 ./setup.sh
 ```
 
-詳細な設定項目や使い方は [mac_setting/README.md](mac_setting/README.md) をご確認ください。
+詳細な設定項目や使い方は [setting/README.md](setting/README.md) をご確認ください。
 
 ### 3. 技術検証 (learning)
 
