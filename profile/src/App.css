@@ -1,0 +1,20 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bento-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 1024px) {
+  .bento-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

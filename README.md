@@ -10,7 +10,7 @@
 | :--- | :--- |
 | [**`setting/`**](setting/) | Macの初期セットアップスクリプト (`setup.sh`)、Homebrew (`Brewfile`)、dotfiles (`zshrc`, `gitconfig` 等)、IDEプロファイルなどの管理 |
 | [**`learning/`**](learning/) | 新技術の検証・学習用プロトタイプ（Vite, Docker Compose 等のハンズオン） |
-| *(今後追加予定)* | プロフィールサイトのソースコード管理 |
+| [**`profile/`**](profile/) | エンジニアプロフィール & ポートフォリオサイト（Vite + React + TypeScript + Glassmorphism Bento Grid） |
 
 ---
 
@@ -39,6 +39,19 @@ cd setting
 各種フレームワークやツールの検証コードは `learning/` 配下に格納されています。
 
 - `learning/vite/` : Vite を用いたフロントエンド検証環境
+
+### 4. プロフィールサイト (profile)
+
+ダークグラスモーフィズムとBento Gridを採用したエンジニアプロフィールサイトです。
+
+```sh
+cd profile
+mise install # Node.jsのセットアップ
+npm install
+npm run dev
+```
+
+ブラウザで `http://localhost:5173` にアクセスしてプレビューできます。プロフィール情報（名前・リンク・スキル等）の変更は [`profile/src/data/profile.ts`](profile/src/data/profile.ts) を編集します。
 
 ---
 

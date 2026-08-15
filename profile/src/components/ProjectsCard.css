@@ -1,0 +1,143 @@
+.projects-bento-card {
+  min-height: 380px;
+}
+
+.projects-inner {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.projects-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--accent-purple);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.view-all-link:hover {
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.project-card-item {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.project-card-item:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-icon-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(192, 132, 252, 0.15);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-purple);
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-action-link {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-pill);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.project-action-link:hover {
+  color: #ffffff;
+  background: var(--bg-pill-active);
+  border-color: var(--border-highlight);
+  transform: scale(1.1);
+}
+
+.project-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-item-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.project-item-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.project-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .projects-inner {
+    padding: 1.4rem;
+  }
+}
