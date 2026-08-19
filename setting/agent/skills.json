@@ -1,0 +1,13 @@
+{
+  "agents": [
+    "antigravity",
+    "claude-code",
+    "github-copilot"
+  ],
+  "skills": [
+    {
+      "repo": "anthropics/skills",
+      "skill": "skill-creator"
+    }
+  ]
+}
