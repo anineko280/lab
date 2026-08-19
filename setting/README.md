@@ -11,6 +11,10 @@
     - [パッケージの追加](#パッケージの追加)
     - [パッケージの削除](#パッケージの削除)
     - [特別対応](#特別対応)
+  - [AIエージェントスキル関連](#aiエージェントスキル関連)
+    - [スキルのインストール](#スキルのインストール)
+    - [スキルの追加](#スキルの追加)
+    - [スキルの更新](#スキルの更新)
   - [Antigravity IDE関連](#antigravity-ide関連)
   - [Mac関連](#mac関連)
 
@@ -84,6 +88,51 @@ brew bundle dump -f
 - gh (GitHub CLI)
   - ログイン認証: `gh auth login`（対話形式で `GitHub.com` / `HTTPS` or `SSH` / Webブラウザ認証を選択して承認）
   - 状態確認: `gh auth status`
+
+### AIエージェントスキル関連
+
+`gh skill` コマンドを活用し、各AIエージェント（Antigravity, Claude Code, GitHub Copilot）用のスキルをグローバル環境（user scope）に一括インストール・管理します。
+
+#### スキルのインストール
+
+`setup_skills.sh` を実行（または `./setup.sh` 実行時にも自動的に呼び出されます）。
+
+```sh
+./setup_skills.sh
+```
+
+#### スキルの追加
+
+1. `setting/agent/skills.json` の `skills` リストに対象のリポジトリとスキル名を追記します（エージェントを追加したい場合は `agents` リストにも追記）。
+
+```json
+{
+  "agents": [
+    "antigravity",
+    "claude-code",
+    "github-copilot"
+  ],
+  "skills": [
+    {
+      "repo": "anthropics/skills",
+      "skill": "skill-creator"
+    },
+    {
+      "repo": "owner/repo",
+      "skill": "skill-name"
+    }
+  ]
+}
+```
+
+2. `./setup_skills.sh` を再実行してインストールを反映します。
+
+#### スキルの更新
+
+```sh
+# 全スキルの最新化
+gh skill update --all
+```
 
 ### Antigravity IDE関連
 
