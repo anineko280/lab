@@ -1,7 +1,3 @@
----
-description: labリポジトリにおけるmiseランタイム管理とプロジェクト運用の規約
----
-
 # Workspace Rules & Conventions (lab)
 
 ## 1. ランタイム管理 (mise)
@@ -50,10 +46,10 @@ description: labリポジトリにおけるmiseランタイム管理とプロジ
 
 ## 6. 設計インタビュー (/grill-me) と Issue / 計画連携
 - `/grill-me` によるヒアリングを通じて要件・設計方針を詳細化した後、**Implementation Plan (`implementation_plan.md`) を作成**してユーザーにレビュー・合意を求めます。
-- **合意後のワークフロー**:
-  1. 「確定した要件・実装計画を GitHub Issue に登録するか」を確認します。
-  2. Issue を作成（または既存 Issue を指定）後、合意した **Implementation Plan の内容を Issue のコメントに自動登録**します。
-  3. コメント登録完了後、実装作業を開始します。
+- **実装フェーズ（コード変更・新規作成）への移行前チェック【必須ゲート】**:
+  - Implementation Plan の承認を得た後、コード変更ツール（`write_to_file`, `replace_file_content` 等）を呼び出す前に、**必ず「確定した要件・実装計画を GitHub Issue に登録するか」をユーザーに確認**します。
+  - **Issue 登録を行う場合**: Issue を作成（または既存 Issue を指定）後、合意した Implementation Plan の内容を Issue のコメントに登録してから実装作業を開始します。
+  - **Issue 登録をスキップする場合**: ユーザーのスキップ指示を確認した上で実装作業を開始します。
 
 ## 7. アーキテクチャ決定記録 (ADR) の作成規約
 - **作成基準**: 重要な設計判断、技術選定、アーキテクチャ方針の決定を行った場合は、Pull Request を作成する前に **`docs/adr/`** 配下に ADR（フォーマット: `docs/adr/NNNN-title.md`）を作成してコミットします。
@@ -68,3 +64,8 @@ description: labリポジトリにおけるmiseランタイム管理とプロジ
   4. **PR タイトル**: Conventional Commits プレフィックス（`feat:`, `fix:` 等）を付与しつつ、タイトル本文は**日本語**で記述します（例: `fix(setting): Antigravityのスキル保存先を ~/.gemini/config/skills に変更`）。
   5. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
 
+## 9. スキルの新規作成・改善規約 (skill-creator & /grill-me)
+- **スキル作成・改善時のワークフロー**:
+  - スキルの新規作成や改善を依頼された場合（`/grill-me` を伴う場合を含む）、必ず **`skill-creator` スキル** のベストプラクティス（意図の把握 → ヒアリング → 構造化された `SKILL.md` のドラフト作成 → テストケース/評価 → トリガー説明文の最適化）に従って進めます。
+- **設計インタビューとの連携**:
+  - `/grill-me` と連携する際は、`ask_question` を用いて1問ずつ段階的に要件・エッジケースをヒアリングし、合意形成後に `skill-creator` の原則（Progressive Disclosure、500行以内、トリガーしやすいDescription等）に沿ったスキルを作成します。
