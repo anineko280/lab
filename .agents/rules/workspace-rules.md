@@ -55,3 +55,10 @@ description: labリポジトリにおけるmiseランタイム管理とプロジ
   2. Issue を作成（または既存 Issue を指定）後、合意した **Implementation Plan の内容を Issue のコメントに自動登録**します。
   3. コメント登録完了後、実装作業を開始します。
 
+## 7. 実装完了後の Walkthrough と Pull Request 作成フロー
+- 実装および検証が完了した後、**Walkthrough (`walkthrough.md`) を作成**して変更内容と検証結果をまとめます。
+- **Pull Request の作成**:
+  1. 新規トピックブランチへコミットし、リモートへ push します。
+  2. `gh pr create` コマンドで PR を作成します。
+  3. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
+
