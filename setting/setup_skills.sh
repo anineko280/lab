@@ -30,7 +30,12 @@ for skill_entry in "${SKILL_ENTRIES[@]}"; do
   for agent in "${AGENTS[@]}"; do
     [ -z "$agent" ] && continue
     echo "エージェント '${agent}' (user scope) に '${repo}' のスキル '${skill}' をインストール中..."
-    gh skill install "$repo" "$skill" --agent "$agent" --scope user --force
+    if [ "$agent" = "antigravity" ]; then
+      mkdir -p "$HOME/.gemini/config/skills"
+      gh skill install "$repo" "$skill" --dir "$HOME/.gemini/config/skills" --force
+    else
+      gh skill install "$repo" "$skill" --agent "$agent" --scope user --force
+    fi
   done
 done
 
