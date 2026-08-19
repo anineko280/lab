@@ -65,5 +65,6 @@ description: labリポジトリにおけるmiseランタイム管理とプロジ
   1. 必要に応じて ADR (`docs/adr/`) を作成・コミットします。
   2. 新規トピックブランチへコミットし、リモートへ push します。
   3. `gh pr create` コマンドで PR を作成します。
-  4. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
+  4. **PR タイトル**: Conventional Commits プレフィックス（`feat:`, `fix:` 等）を付与しつつ、タイトル本文は**日本語**で記述します（例: `fix(setting): Antigravityのスキル保存先を ~/.gemini/config/skills に変更`）。
+  5. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
 
