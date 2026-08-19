@@ -55,10 +55,15 @@ description: labリポジトリにおけるmiseランタイム管理とプロジ
   2. Issue を作成（または既存 Issue を指定）後、合意した **Implementation Plan の内容を Issue のコメントに自動登録**します。
   3. コメント登録完了後、実装作業を開始します。
 
-## 7. 実装完了後の Walkthrough と Pull Request 作成フロー
+## 7. アーキテクチャ決定記録 (ADR) の作成規約
+- **作成基準**: 重要な設計判断、技術選定、アーキテクチャ方針の決定を行った場合は、Pull Request を作成する前に **`docs/adr/`** 配下に ADR（フォーマット: `docs/adr/NNNN-title.md`）を作成してコミットします。
+- **作成不要なケース**: 軽微なバグ修正、ルーティンな設定値変更など、ADR として残すほどでない内容の場合は作成不要です。
+
+## 8. 実装完了後の Walkthrough と Pull Request 作成フロー
 - 実装および検証が完了した後、**Walkthrough (`walkthrough.md`) を作成**して変更内容と検証結果をまとめます。
 - **Pull Request の作成**:
-  1. 新規トピックブランチへコミットし、リモートへ push します。
-  2. `gh pr create` コマンドで PR を作成します。
-  3. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
+  1. 必要に応じて ADR (`docs/adr/`) を作成・コミットします。
+  2. 新規トピックブランチへコミットし、リモートへ push します。
+  3. `gh pr create` コマンドで PR を作成します。
+  4. **PR 本文には必ず Walkthrough の内容（概要、変更内容、検証ログ等）を含め**、関連する Issue がある場合は `Fixes #<issue_number>` を記載して連携します。
 
